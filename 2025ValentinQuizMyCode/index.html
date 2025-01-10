@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ TIMEE!! hehehe</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+
+    <div id="intro" class="screen">
+      <h1>Hey my beloved Sofia!</h1>
+      <p>Sorry for taking long this is what I have been up to</p>
+      <p>Ready for a walk down memory lane?</p>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" class="screen hidden">
+      <h2 id="question"></h2>
+      <div id="answers"></div>
+    </div>
+
+    <div id="correct" class="screen hidden">
+      <h2 id="congrats-message"></h2>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="final" class="screen hidden">
+        <h1>Will you be my Valentine? 💕</h1>
+        <button onclick="showGif('Yes')">Yes</button>
+        <button onclick="showGif('Absolutely!')">Absolutely!</button>
+        <img id="valentine-gif" class="hidden" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXRoN3lwbnM0cm5qdjh6OGdzaDd5MjNuc3c1eG43Znlnc2l1ZzVvZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c76IJLufpNwSULPk77/giphy.webp" alt="Happy Valentine GIF"> 
+      </div>
+      
+  </div>
+</body>
+</html>
